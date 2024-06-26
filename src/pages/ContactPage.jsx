@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from '@emailjs/browser';
 
 export default function ContactPage() {
   const [name, setName] = useState("");
@@ -42,7 +43,31 @@ export default function ContactPage() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-      alert("Go to previous tab to get in contact with me for now.")
+
+    // EmailJs service ID, template ID, and Public Key
+    const serviceId = 'service_b0cgzdj';
+    const templateId = 'template_k5kvwx1';
+    const publicKey = 'lj6tCZsxiWSH32fkN';
+      // alert("Go to previous tab to get in contact with me for now.")
+
+    const templateParams = {
+      from_name: name,
+      from_emai: email,
+      to_name: 'Mandeep',
+      message: message,
+    };
+    
+    // Send the email using EmailJS
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log('Email sent successfully!', response);
+        setName('');
+        setEmail('');
+        setMessage('');
+      })
+      .catch((error) => {
+        console.log('Error senfing email:', error);
+      })
   };
 
   return (
