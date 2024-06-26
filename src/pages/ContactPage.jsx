@@ -52,7 +52,7 @@ export default function ContactPage() {
 
     const templateParams = {
       from_name: name,
-      from_emai: email,
+      from_email: email,
       to_name: 'Mandeep',
       message: message,
     };
