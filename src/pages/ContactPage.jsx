@@ -80,6 +80,7 @@ export default function ContactPage() {
         value={name}
         onChange={handleNameChange}
         onBlur={() => handleBlur("name")}
+        placeholder="Your Name"
       ></input>
       <label htmlFor="email">Email Address:</label>
       <input
@@ -88,6 +89,7 @@ export default function ContactPage() {
         value={email}
         onChange={handleEmailChange}
         onBlur={() => handleBlur("email")}
+        placeholder="example@gmail.com"
       ></input>
       <label htmlFor="message">Message:</label>
       <textarea
@@ -96,6 +98,7 @@ export default function ContactPage() {
         value={message}
         onChange={handleMessageChange}
         onBlur={() => handleBlur("message")}
+        placeholder="Type your message here"
       ></textarea>
       {!nameValid && <p className="error-text">Name is required.</p>}
       {!emailValid && <p className="error-text">Your email is invalid.</p>}

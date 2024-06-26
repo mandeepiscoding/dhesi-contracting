@@ -1,8 +1,8 @@
 :root {
-  --dark-green: #000000;
+  --dark-green: #0B7A75;
   --green: #0B7A75;
   --dark-tan: #ffffff;
-  --tan: 0#fffefe;
+  --tan: #fffefe;
   --dark-red: #c20a0a;
   --darker-red: #ff1500;
   --dark-grey: #b72e2e;
@@ -17,12 +17,10 @@
   font-size: 1.1rem;
 }
 
-
 body {
   overflow-y: scroll;
   background-color: var(--dark-tan);
 }
-
 
 header,
 main,
@@ -31,7 +29,7 @@ footer {
   line-height: 1.5rem;
 }
 
-​ol,
+ol,
 ul {
   list-style: none;
 }
@@ -72,7 +70,6 @@ h1 {
   line-height: 3rem;
 }
 
-
 h2 {
   font-size: 1.56rem;
 }
@@ -90,7 +87,6 @@ header nav,
 header nav h1 {
   background-color: var(--dark-green);
   color: var(--tan);
-  /* padding-bottom: 2rem; */
 }
 
 header nav ul {
@@ -193,7 +189,6 @@ header nav ul {
 .card-column.rest {
   min-height: fit-content;
 }
-
 
 .card .card-column a {
   text-decoration: none;
@@ -418,7 +413,6 @@ footer img {
   .contacts #email {
     width: 50%;
   }
-
 }
 
 @media screen and (min-width: 992px) {
@@ -455,5 +449,4 @@ footer img {
   .contacts #message {
     width: 75%;
   }
-
 }

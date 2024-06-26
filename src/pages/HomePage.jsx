@@ -37,8 +37,7 @@ export default function AboutPage() {
       
         </p>
         <p className="portrait-body">
-        For inquiries, please email us at <a href="mailto:dhesicontractingltd1@gmail.com">dhesicontractingltd1@gmail.com</a> or call us at <a href="tel:+14034316438">+1 (403) 431-6438</a>.
-
+        For inquiries, please refer to 'Contact Us' to get in touch with us!
         </p>
         <p className="portrait-body">
         </p>
