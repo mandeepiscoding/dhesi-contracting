@@ -45,9 +45,9 @@ export default function ContactPage() {
     event.preventDefault();
 
     // EmailJs service ID, template ID, and Public Key
-    const serviceId = 'service_b0cgzdj';
-    const templateId = 'template_k5kvwx1';
-    const publicKey = 'lj6tCZsxiWSH32fkN';
+    const serviceId = 'service_qp6ti78';
+    const templateId = 'template_zc7djzr';
+    const publicKey = 'igRIC7KEBZUyeyuSL';
       // alert("Go to previous tab to get in contact with me for now.")
 
     const templateParams = {
