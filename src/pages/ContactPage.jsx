@@ -66,7 +66,7 @@ export default function ContactPage() {
         setMessage('');
       })
       .catch((error) => {
-        console.log('Error senfing email:', error);
+        console.log('Error sending email:', error);
       })
   };
 
